@@ -10,7 +10,14 @@ bool search(int arr[],int size,int key){
     return 0;
 }
 int main()
-{
+
+{`
+int arr[10]={6,9,4,2,6,8,6,9,1,4};
+    cout<<"enter the elements to search for"<<endl;
+    int key;
+    cin>>key;
+
+
 
 bool found= search(arr,10,key);
     if(found){
@@ -19,6 +26,7 @@ bool found= search(arr,10,key);
     else{
         cout<<"key is absent"<<endl;
     }
+
 
 	 return 0;
 }
