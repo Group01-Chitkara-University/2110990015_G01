@@ -1,8 +1,6 @@
 #include <iostream>
 
 using namespace std;
-int main()
-{
 bool search(int arr[],int size,int key){
     for(int i=0; i<size; i++){
         if(arr[i]==key){
@@ -11,15 +9,16 @@ bool search(int arr[],int size,int key){
     }
     return 0;
 }
+int main()
+{
 
-
-
-
-
-
-
-
-
+bool found= search(arr,10,key);
+    if(found){
+        cout<<"key is present"<<endl;
+    }
+    else{
+        cout<<"key is absent"<<endl;
+    }
 
 	 return 0;
 }
